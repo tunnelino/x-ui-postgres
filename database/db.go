@@ -59,7 +59,7 @@ func InitDB(dbPath string) error {
 	c := &gorm.Config{
 		Logger: gormLogger,
 	}
-	db, err = gorm.Open(postgres.Open("host=localhost user=postgres password=postgres dbname=booking port=5432 sslmode=disable TimeZone=Asia/Tehran"), &gorm.Config{Logger: newLogger})
+	db, err = gorm.Open(postgres.Open("host=localhost user=tunnelino password=Hh121213 dbname=tunnelino port=5432 sslmode=disable TimeZone=Asia/Tehran"), &gorm.Config{Logger: newLogger})
 	if err != nil {
 		return err
 	}
