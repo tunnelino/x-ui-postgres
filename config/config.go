@@ -45,6 +45,9 @@ func IsDebug() bool {
 	return os.Getenv("XUI_DEBUG") == "true"
 }
 
+func GetDBConn() string {
+	return "host=localhost user=postgres password=postgres dbname=tunnelino port=5432 sslmode=disable TimeZone=Asia/Tehran"
+}
 func GetDBPath() string {
 	return fmt.Sprintf("/etc/%s/%s.db", GetName(), GetName())
 }
